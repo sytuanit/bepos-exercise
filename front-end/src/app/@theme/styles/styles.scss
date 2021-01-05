@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+// themes - our custom or/and out of the box themes
+@import "themes";
+
+// framework component themes (styles tied to theme variables)
+@import "~@nebular/theme/styles/globals";
+@import "~@nebular/auth/styles/all";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";
+
+// loading progress bar theme
+@import "./pace.theme";
+@import "./layout";
+@import "./overrides";
+
+// Template
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "./style-common.scss";
+@import "./style-button.scss";
+@import "./style-label.scss";
+@import "./style-table.scss";
+@import "./style-select.scss";
+@import "./style-modal.scss";
+@import "./style-checkbox.scss";
+@import "./style-tab.scss";
+@import "./style-card.scss";
+
+// install the framework and custom global styles
+@include nb-install() {
+  // framework global styles
+  @include nb-theme-global();
+  @include nb-auth-global();
+
+  @include ngx-layout();
+  // loading progress bar
+  @include ngx-pace-theme();
+
+  @include nb-overrides();
+}
+
+/*
+* APPLY FONT FOR MANULIFE
+* Apply all project
+*/
+/* Regular style */
+@font-face {
+  font-family: ManulifeJHSans Regular;
+  src: url(../../../assets/font/ManulifeJHSans-Regular.otf) format("opentype");
+}
+/* Bold style */
+@font-face {
+  font-family: ManulifeJHSans Bold;
+  src: url(../../../assets/font/ManulifeJHSans-Bold.otf) format("opentype");
+}
+/* Light style */
+@font-face {
+  font-family: ManulifeJHSans Light;
+  src: url(../../../assets/font/ManulifeJHSans-Light.otf) format("opentype");
+}
+/* Italic style */
+@font-face {
+  font-family: ManulifeJHSans Italic;
+  src: url(../../../assets/font/ManulifeJHSerif-Italic.otf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "ManulifeJHSans Regular", "ManulifeJHSans Regular", sans-serif;
+}

@@ -1,0 +1,142 @@
+@import "./themes";
+
+@mixin nb-overrides() {
+    nb-select.size-medium button {
+        padding: 0.4375rem 2.2rem 0.4375rem 1.125rem !important;
+
+        nb-icon {
+            right: 0.41rem !important;
+        }
+    }
+}
+
+/** OVERRIDE STYLE
+* Custom theme NAV background item
+*/
+
+.nb-theme-manulife nb-layout-header nav {
+    background: #00a758 !important;
+    /** Backup color for header
+    background: linear-gradient(99deg, rgba(0, 153, 102, 1) 37%, rgba(253, 116, 45, 1) 100%) !important;
+  */
+}
+
+/** OVERRIDE STYLE
+* fill white color for FAS header
+*/
+.nb-theme-manulife nb-layout-header nav a {
+    color: #ffffff !important;
+}
+
+.nb-theme-manulife nb-user .user-name {
+    color: #ffffff !important;
+}
+
+.nb-theme-manulife nb-action nb-icon {
+    color: #ffffff !important;
+}
+
+/** OVERRIDE STYLE
+* Adjust padding
+*/
+.nb-theme-manulife nb-layout .layout .layout-container .content .columns nb-layout-column {
+    padding: 1rem !important;
+}
+
+.nb-theme-manulife [nbButton].appearance-filled.status-primary {
+    min-width: 104px;
+}
+
+.nb-theme-manulife .cdk-overlay-container {
+    z-index: 1060 !important;
+}
+
+.nb-card-header {
+    background-color: #009966 !important;
+    max-height: 30px;
+    padding-top: 5px !important;
+    color: white !important;
+}
+
+/** OVERRIDE STYLE
+*Style for alert
+*/
+.alert-danger {
+    color: #e21c2e !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-size: 0.8125rem !important;
+}
+
+.alert {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+/** OVERRIDE STYLE
+* Font text-transform for button
+*/
+.nb-theme-manulife [nbButton].appearance-filled {
+    text-transform: inherit !important;
+}
+
+/** OVERRIDE STYLE
+* fix height nav header
+*/
+
+.nb-theme-manulife nb-layout-header nav {
+    height: 2.75rem !important;
+}
+
+.nb-theme-manulife nb-layout-header.fixed ~ .layout-container {
+    padding-top: 2.75rem !important;
+}
+
+.nb-theme-manulife nb-layout .layout .layout-container nb-sidebar .main-container-fixed {
+    top: 2.75rem !important;
+}
+
+/* OVERRIDE STYLE
+* change color sidebar a
+ */
+.nb-theme-manulife nb-menu .menu-item a {
+    font-weight: 500 !important;
+}
+
+/** OVERRIDE STYLE
+* style for user picture
+*/
+.nb-theme-manulife nb-user .user-picture {
+    background-color: #ffffff !important;
+    border: 1px solid #edf1f7 !important;
+}
+
+/* OVERRIDE STYLE
+* style for label
+*/
+.nb-theme-manulife .label {
+    color: #282b3e !important;
+    font-family: ManulifeJHSans Regular !important;
+    font-weight: 500 !important;
+}
+
+/**
+* OVERRIDE PADDING FOR BUTTON
+* USING: project
+*/
+.nb-theme-manulife [nbButton].appearance-ghost.size-medium {
+    padding: 0.75rem 0.65rem !important;
+}
+
+// .nb-theme-manulife [nbInput].size-small {
+//     font-size: 0.7125rem !important;
+// }
+
+// .form-control-sm {
+//     font-size: 0.7125rem !important;
+// }
+
+// .nb-theme-manulife nb-card {
+//     font-size: 0.7125rem !important;
+// }

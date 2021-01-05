@@ -1,0 +1,47 @@
+.modal-content {
+    border-radius: 0.4rem;
+}
+
+.md-modal .modal-dialog {
+    max-width: 550px;
+}
+
+.mdx-modal .modal-dialog {
+    max-width: 650px !important;
+}
+
+//Style for modal
+.modal-header {
+    padding: 0.5rem 1rem !important;
+    background-color: #009966 !important;
+    span {
+        color: #fff;
+        font-size: 0.8125rem;
+    }
+}
+
+.modal-header-error {
+    @extend .modal-header;
+    background-color: #cc0000 !important;
+}
+
+.modal-header-warning {
+    @extend .modal-header;
+    background-color: orange !important;
+}
+
+.modal-body {
+    font-size: 0.8125rem;
+    min-height: 70px;
+}
+
+.modal-lg-size {
+    max-width: 75rem;
+}
+
+@media (min-width: 576px)
+{
+    .modal-sm {
+        max-width: 320px;
+    }
+}

@@ -1,0 +1,19 @@
+.nb-theme-manulife nb-select.appearance-outline.size-small .select-button {
+    display: block;
+}
+
+.nb-theme-manulife nb-select.appearance-outline.size-small .select-button .ng-star-inserted {
+    text-overflow: ellipsis;
+    position: relative;
+    overflow: hidden;
+    // white-space: nowrap;
+}
+
+.ng-select.select-custom {
+    min-height: 0px;
+}
+
+.ng-select.select-custom .ng-select-container  {
+    min-height: 0px;
+    height: 31px;
+}

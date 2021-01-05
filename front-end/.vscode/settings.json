@@ -1,0 +1,19 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "tslint.enable": false,
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.disableLanguages": ["html"],
+    "cSpell.words": [
+        "Dropdown",
+        "consts",
+        "datatable",
+        "datetime",
+        "frozenbody",
+        "paginator",
+        "paginatorleft",
+        "scrollable",
+        "timepicker",
+        "yesno"
+    ]
+}
